@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Static/css/style.css">
+
+    <title>JavaScript Challenges</title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+    
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <div class="flex-box-container-2">
+            <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        
+            <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+        
+        <div class="flex-box-container-2"  id="flex-cat-gen">
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="static/images/male-clenched-fist-28768010.jpg" height="150" width="150" onclick="rpsGame(this)">
+            <img id="paper" src="static/images/human-hand-showing-five-fingers-sketch-style-isolated-white-background-human-hand-showing-five-fingers-sketch-style-117553043.jpg" height="150" width="150" onclick="rpsGame(this)">
+            <img id="scissors" src="static/images/vector-illustration-hand-peace-sign-hand-peace-sign-194402158.jpg" height="150" width="150" onclick="rpsGame(this)">
+        </div>
+        <div class="flex-box-container-2">
+            <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <!--Challenge 4 - Change the color of the button-->
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the Color of All Buttons!</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <!--Challenge 5 - Blackjack Game-->
+    <div class="container-5">
+        <h2><u>Challenge 5: Blackjack</u></h2>
+        <h3>
+            <span id="blackjack-result">
+                Let's Play
+            </span>
+        </h3>
+
+        <div id="refresh">
+            <div class="flex-blackjack-row-1">
+                <div id="your-box">
+                    <h2>Player 1: <span id="your-blackjack-result">0</span></h2>
+                </div>
+                <div id="dealer-box">
+                    <h2>Player 2: <span id="dealer-blackjack-result">0</span></h2>
+                </div>
+            </div>
+
+            <div class="flex-blackjack-row-2">
+                <div>
+                    <button class="btn btn-success mr-2" id="blackjack-hit-button">Player-1</button>
+                    <button class="btn btn-warning mr-2" id="blackjack-stand-button">Player-2</button>
+                    <button class="btn btn-primary" onclick="blackjackDeal()" id="blackjack-deal-button">Deal</button>
+                    <button class="btn btn-danger" onclick="reset()" id="blackjack-restart-button">Restart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tr>
+                    <th>Player 1</th>
+                    <th>Player 2</th>
+                    <th>Draws</th>
+                </tr>
+                <tr>
+                    <td><span id="player1">0</span></td>
+                    <td><span id="player2">0</span></td>
+                    <td><span id="draws">0</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    <script src="Static/js/script.js"></script>
+</body>
+</html>

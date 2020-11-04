@@ -1,0 +1,94 @@
+.container-1, .container-2, .container-3, .container-4, .container-5{
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    width: 75%;
+    background-color: beige;
+    margin-top: 50px;
+}
+.container-5 {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid goldenrod;
+    width: 75%;
+    background-color: rgb(0, 65, 0);
+    margin-top: 50px;
+    color: white;
+    padding: 10px;
+}
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    display: flex;
+    border: 1px solid gold;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pick-color{
+    display: flex;
+    border: 1.5px solid black;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2{
+    background-image: url('https://image.freepik.com/free-vector/poker-table-background-green-color_47243-1068.jpg');
+    color: #ffffff;
+}
+
+.flex-blackjack-row-1 div{
+    border: 2.5px solid goldenrod;
+    padding: 10px;
+    text-align: center;
+    height: 350px;
+    flex: 10;
+    margin: 2px;
+}
+.flex-blackjack-row-1 img {
+    width: 21%;
+    padding: 5px;
+    
+}
+.flex-blackjack-row-2 button{
+    border: 2px solid goldenrod;
+    padding: 10px;
+    margin: 5px;
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.flex-blackjack-row-3{
+    background-color: rgb(0, 65, 0);
+}
+table, th, td{
+    padding: 5px;
+    color: white;
+    border: 2px solid goldenrod;
+}
+body {
+    margin: 50px;
+    text-align: center;
+    padding-bottom: 400px;
+    background-color: antiquewhite;
+}
+
+.flex-box-container-2 img{
+   box-shadow: 0px 10px 50px rgb(0, 0, 10);
+    margin: 15px;
+    size: 50px;
+    width: 25%;
+    height: auto;
+}
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px goldenrod;
+}
+.flex-box-rps img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
